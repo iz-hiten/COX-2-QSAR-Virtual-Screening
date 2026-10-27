@@ -1,0 +1,37 @@
+{
+  "cox2": {
+    "raw_records": 8504,
+    "after_validity_filter": 8151,
+    "after_exact_nM": 6116,
+    "after_value_range": 6116,
+    "after_structure_standardisation": 6102,
+    "unique_compounds": 4374,
+    "after_replicate_consistency": 4204,
+    "median_measurements_per_compound": 1.0,
+    "pIC50_min": 4.0,
+    "pIC50_max": 10.699,
+    "pIC50_mean": 6.198,
+    "pIC50_std": 1.123
+  },
+  "cox1": {
+    "raw_records": 4488,
+    "after_validity_filter": 4181,
+    "after_exact_nM": 2142,
+    "after_value_range": 2142,
+    "after_structure_standardisation": 2131,
+    "unique_compounds": 1646,
+    "after_replicate_consistency": 1604,
+    "median_measurements_per_compound": 1.0,
+    "pIC50_min": 4.0,
+    "pIC50_max": 9.0,
+    "pIC50_mean": 5.282,
+    "pIC50_std": 0.912
+  },
+  "paired_both_isoforms": 1244,
+  "selectivity_index_median": 1.018,
+  "max_spread_log_threshold": 1.0,
+  "heavy_atom_range": [
+    8,
+    70
+  ]
+}

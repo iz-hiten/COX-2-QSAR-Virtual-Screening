@@ -1,0 +1,209 @@
+{
+  "n_compounds": 4204,
+  "n_descriptors": 20,
+  "n_fp_bits": 1024,
+  "seed": 42,
+  "splits": {
+    "random": {
+      "n_train": 3363,
+      "n_test": 841,
+      "models": {
+        "Ridge": {
+          "test": {
+            "R2": 0.2851,
+            "RMSE": 0.9828,
+            "MAE": 0.7126
+          },
+          "cv_train": {
+            "R2": 0.0693,
+            "RMSE": 1.0727,
+            "MAE": 0.7983,
+            "Q2": 0.0693
+          }
+        },
+        "PLS": {
+          "test": {
+            "R2": 0.3903,
+            "RMSE": 0.9077,
+            "MAE": 0.6821
+          },
+          "cv_train": {
+            "R2": 0.2665,
+            "RMSE": 0.9523,
+            "MAE": 0.7209,
+            "Q2": 0.2665
+          }
+        },
+        "SVR (RBF)": {
+          "test": {
+            "R2": 0.5853,
+            "RMSE": 0.7486,
+            "MAE": 0.5381
+          },
+          "cv_train": {
+            "R2": 0.5408,
+            "RMSE": 0.7535,
+            "MAE": 0.5541,
+            "Q2": 0.5408
+          }
+        },
+        "Gradient Boosting": {
+          "test": {
+            "R2": 0.3659,
+            "RMSE": 0.9257,
+            "MAE": 0.7387
+          },
+          "cv_train": {
+            "R2": 0.3933,
+            "RMSE": 0.8661,
+            "MAE": 0.6891,
+            "Q2": 0.3933
+          }
+        },
+        "Random Forest": {
+          "test": {
+            "R2": 0.5417,
+            "RMSE": 0.7869,
+            "MAE": 0.5755
+          },
+          "cv_train": {
+            "R2": 0.5356,
+            "RMSE": 0.7577,
+            "MAE": 0.569,
+            "Q2": 0.5356
+          }
+        }
+      }
+    },
+    "scaffold": {
+      "n_train": 3363,
+      "n_test": 841,
+      "n_unique_scaffolds": 1176,
+      "models": {
+        "Ridge": {
+          "R2": -0.802,
+          "RMSE": 1.4547,
+          "MAE": 1.1156
+        },
+        "PLS": {
+          "R2": -0.2715,
+          "RMSE": 1.222,
+          "MAE": 0.9589
+        },
+        "SVR (RBF)": {
+          "R2": 0.2495,
+          "RMSE": 0.9388,
+          "MAE": 0.7586
+        },
+        "Gradient Boosting": {
+          "R2": 0.1247,
+          "RMSE": 1.0138,
+          "MAE": 0.8302
+        },
+        "Random Forest": {
+          "R2": 0.2346,
+          "RMSE": 0.9481,
+          "MAE": 0.7665
+        }
+      }
+    }
+  },
+  "best_model": "SVR (RBF)",
+  "applicability_domain": {
+    "method": "mean distance to 5 nearest training neighbours in standardised descriptor space",
+    "threshold_95th_percentile": 2.4111,
+    "test_inside_fraction": 0.9608,
+    "test_R2_inside": 0.5958,
+    "test_RMSE_inside": 0.7329,
+    "test_RMSE_outside": 1.0629
+  },
+  "y_randomisation": {
+    "n_runs": 20,
+    "mean_R2": -0.3334,
+    "max_R2": -0.2541,
+    "real_R2": 0.5853
+  },
+  "descriptor_importance": [
+    {
+      "descriptor": "BertzCT",
+      "importance": 0.1225
+    },
+    {
+      "descriptor": "BalabanJ",
+      "importance": 0.0987
+    },
+    {
+      "descriptor": "TPSA",
+      "importance": 0.0913
+    },
+    {
+      "descriptor": "MolLogP",
+      "importance": 0.077
+    },
+    {
+      "descriptor": "HallKierAlpha",
+      "importance": 0.076
+    },
+    {
+      "descriptor": "Kappa2",
+      "importance": 0.0752
+    },
+    {
+      "descriptor": "qed",
+      "importance": 0.0642
+    },
+    {
+      "descriptor": "Chi1v",
+      "importance": 0.0612
+    },
+    {
+      "descriptor": "MolWt",
+      "importance": 0.0518
+    },
+    {
+      "descriptor": "MolMR",
+      "importance": 0.0518
+    },
+    {
+      "descriptor": "NumHAcceptors",
+      "importance": 0.0508
+    },
+    {
+      "descriptor": "FractionCSP3",
+      "importance": 0.0501
+    },
+    {
+      "descriptor": "NHOHCount",
+      "importance": 0.0229
+    },
+    {
+      "descriptor": "NumRotatableBonds",
+      "importance": 0.0201
+    },
+    {
+      "descriptor": "NumAliphaticRings",
+      "importance": 0.0197
+    },
+    {
+      "descriptor": "NOCount",
+      "importance": 0.0193
+    },
+    {
+      "descriptor": "NumHDonors",
+      "importance": 0.0164
+    },
+    {
+      "descriptor": "HeavyAtomCount",
+      "importance": 0.0146
+    },
+    {
+      "descriptor": "NumAromaticRings",
+      "importance": 0.0093
+    },
+    {
+      "descriptor": "RingCount",
+      "importance": 0.007
+    }
+  ],
+  "descriptor_only_test_R2": 0.3971
+}
